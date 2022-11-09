@@ -10,6 +10,4 @@ need to link the text values in the time block to the local storage
 
 need to make sure that the values remain displayed in the page when refreshed
 
-need to style the lines to extend over time slot on left hand side to match mockup
 
-need to color save buttons and give them a rounded corner to match mockup
