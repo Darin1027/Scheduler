@@ -3,8 +3,8 @@
 // in the html.
 $(function () {
   // * Date stamp at top of page
-  var today = dayjs();
-  $("#currentDay").text(today.format("MMM D, YYYY"));
+  var currentDay = dayjs();
+  $("#currentDay").text(currentDay.format("MMM D, YYYY"));
 
   // * Declared variables within the function (local)
   var availTimeSlot = [
@@ -49,19 +49,21 @@ $(function () {
   var currentTime = dayjs().hour();
 
   // * for loop to change the class on each box depending on the hour of the day
-  for (let index = 0; index < allHours.length; index++) {
-    if (allHours[i]) === currentTime){
-        $(availTimeSlot[i]).addClass("present");
-    } else if (allHours[i] > currentTime){
-      $(availTimeSlot[i]).addClass("future")
-    } else (allHours[i] < currentTime){
-      $(availTimeSlot[i]).addClass("past")
-    }
+  function colorChange() {
+    $(".time-block").each(function () {
+      var sectionId = $(this).attr("id");
+      if (sectionId == currentTime) {
+        $(this).addClass("present");
+      }
+      if (sectionId < currentTime) {
+        $(this).addClass("past");
+      }
+      if (sectionId > currentTime) {
+        $(this).addClass("future");
+      }
+    });
   }
-
-
-
-
+  colorChange();
 
   // TODO: Add a listener for click events on the save button. This code should
   // use the id in the containing time-block as a key to save the user input in
