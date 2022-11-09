@@ -35,6 +35,11 @@ textarea {
   color: white;
 }
 
+.wait{
+  background-color: #cad144;
+  color: rgb(84, 5, 5);
+}
+
 .present {
   background-color: #ff6961;
   color: white;

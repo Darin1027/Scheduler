@@ -1,0 +1,15 @@
+Need to include the day.js clock at the top of the page under text
+
+need to increase the amount of time slots displaying for business hours
+
+need to set up time blocks to change color with the time change (past, present, upcoming)
+
+need to create a local storage
+
+need to link the text values in the time block to the local storage
+
+need to make sure that the values remain displayed in the page when refreshed
+
+need to style the lines to extend over time slot on left hand side to match mockup
+
+need to color save buttons and give them a rounded corner to match mockup
