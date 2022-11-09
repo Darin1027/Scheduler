@@ -24,7 +24,7 @@ _Tired of your employees double booking themselves and causing disruptions to yo
 - _Hold back your excitment_
 - _Go ahead a freak out! You will never forget an appointment again!_
 
-- ![Image Site]()
+- ![Image Site](./Assets/Scheduler-Work-Day.png)
 
 ## Known Bugs
 
@@ -35,3 +35,5 @@ _Tired of your employees double booking themselves and causing disruptions to yo
 _{refer to license in repo.}_
 
 ## Link to application
+
+https://darin1027.github.io/Scheduler-Work-Day/
