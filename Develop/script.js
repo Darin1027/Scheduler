@@ -2,8 +2,19 @@
 // the code isn't run until the browser has finished rendering all the elements
 // in the html.
 $(function () {
+  // * Date stamp at top of page
   var today = dayjs();
   $("#currentDay").text(today.format("MMM D, YYYY"));
+
+  // * Declared variables within the function (local)
+  var timeSlot = ["9", "10", "11", "12", "13", "14", "15", "16", "17"];
+
+  // * for loop to change the class on each box depending on the hour of the day
+  for (let index = 0; index < timeSlot.length; index++) {
+    const element = timeSlot[index];
+    dayjs().hour()
+  }
+
   // TODO: Add a listener for click events on the save button. This code should
   // use the id in the containing time-block as a key to save the user input in
   // local storage. HINT: What does `this` reference in the click listener
