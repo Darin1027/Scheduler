@@ -7,13 +7,61 @@ $(function () {
   $("#currentDay").text(today.format("MMM D, YYYY"));
 
   // * Declared variables within the function (local)
-  var timeSlot = ["9", "10", "11", "12", "13", "14", "15", "16", "17"];
+  var availTimeSlot = [
+    // link to the ID
+    "#9",
+    "#10",
+    "#11",
+    "#12",
+    "#13",
+    "#14",
+    "#15",
+    "#16",
+    "#17",
+  ];
+  var allHours = [
+    // all the hours in a 24hr clock
+    "0",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "10",
+    "11",
+    "12",
+    "13",
+    "14",
+    "15",
+    "16",
+    "17",
+    "18",
+    "19",
+    "20",
+    "21",
+    "22",
+    "23",
+  ];
+  var currentTime = dayjs().hour();
 
   // * for loop to change the class on each box depending on the hour of the day
-  for (let index = 0; index < timeSlot.length; index++) {
-    const element = timeSlot[index];
-    dayjs().hour()
+  for (let index = 0; index < allHours.length; index++) {
+    if (allHours[i]) === currentTime){
+        $(availTimeSlot[i]).addClass("present");
+    } else if (allHours[i] > currentTime){
+      $(availTimeSlot[i]).addClass("future")
+    } else (allHours[i] < currentTime){
+      $(availTimeSlot[i]).addClass("past")
+    }
   }
+
+
+
+
 
   // TODO: Add a listener for click events on the save button. This code should
   // use the id in the containing time-block as a key to save the user input in
